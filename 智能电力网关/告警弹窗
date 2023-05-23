@@ -1,9 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T04:09:53.313Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42" version="21.3.2" etag="Z2hJ02j6lmYhBqbjdG78" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-23T06:59:55.897Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42" etag="Pr7RXESYaR6fbE5cq8Hq" version="21.3.2" type="github">
   <diagram name="第 1 页" id="r9wLYMiI9cPj0UK-Ucj_">
-    <mxGraphModel>
+    <mxGraphModel dx="989" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-1" target="dHMFCLZdvbz1mmjX9eHz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-1" value="告警弹窗初始化" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="40" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-2" value="在lv_layer_sys层创建msgbox&lt;br&gt;设置标题及文本字体&lt;br&gt;添加隐藏标志&lt;br&gt;添加关闭按钮回调函数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="150" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-3" target="dHMFCLZdvbz1mmjX9eHz-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-3" value="告警窗口显示" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-5" target="dHMFCLZdvbz1mmjX9eHz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-5" value="main.c中注册信号回调&lt;br&gt;收到信号10后根据页面状态判断是否显示告警窗口" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="140" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-6" target="dHMFCLZdvbz1mmjX9eHz-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;告警窗口显示&lt;br style=&quot;font-size: 10px;&quot;&gt;打开mmap文件，解析其中的json字段&lt;br style=&quot;font-size: 10px;&quot;&gt;分别为告警类型，控件ID，告警描述&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="240" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-7" target="dHMFCLZdvbz1mmjX9eHz-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-7" value="清除告警窗口隐藏标志&lt;br&gt;文本设置为上述解析出的字段&lt;br&gt;设置lv_layer_sys层透明度及背景颜色&lt;br&gt;设置lv_layer_sys吸收所有点击以模拟模态弹窗" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="360" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-11" value="点击close按钮添加隐藏标志&lt;br&gt;清除lv_layer_sys相关设置" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="500" width="170" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
