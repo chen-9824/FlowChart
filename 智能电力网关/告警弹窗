@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T06:59:55.897Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42" etag="Pr7RXESYaR6fbE5cq8Hq" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-23T07:01:08.808Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42" etag="c7iMP7oUYiBko3bJde3B" version="21.3.2" type="github">
   <diagram name="第 1 页" id="r9wLYMiI9cPj0UK-Ucj_">
     <mxGraphModel dx="989" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="dHMFCLZdvbz1mmjX9eHz-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-6" target="dHMFCLZdvbz1mmjX9eHz-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dHMFCLZdvbz1mmjX9eHz-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;告警窗口显示&lt;br style=&quot;font-size: 10px;&quot;&gt;打开mmap文件，解析其中的json字段&lt;br style=&quot;font-size: 10px;&quot;&gt;分别为告警类型，控件ID，告警描述&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="dHMFCLZdvbz1mmjX9eHz-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;10信号触发且状态为NORMAL&lt;br style=&quot;font-size: 10px;&quot;&gt;打开mmap文件，解析其中的json字段&lt;br style=&quot;font-size: 10px;&quot;&gt;分别为告警类型，控件ID，告警描述&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="405" y="240" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="dHMFCLZdvbz1mmjX9eHz-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dHMFCLZdvbz1mmjX9eHz-7" target="dHMFCLZdvbz1mmjX9eHz-11">
