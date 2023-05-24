@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2023-05-24T07:09:46.670Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50" version="21.3.2" etag="VG4WyqmtMATFZiSPnIoE" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-24T08:27:00.045Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50" etag="pgxsrmG2qxNCLuZzNn69" version="21.3.2" type="github">
   <diagram name="第 1 页" id="qlo5Ex6i2oIvP5J0vl1J">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="AZgB-sFh266Aaa95AsC0-1" value="创建历史记录下拉列表，默认禁止，只有在已登录时使能点击，&lt;br&gt;点击子项时触发历史记录显示回调" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="80" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-2" value="父对象lv_layer_top" style="text;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="490" y="40" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-3" value="&lt;span&gt;&lt;b&gt;历史记录显示回调&lt;/b&gt;&lt;br&gt;第一次调用时进行数据库初始化&lt;br&gt;初始化失败清除警告框隐藏标志&lt;br&gt;根据当前所在页数计算出偏移数据量，调用获取数据函数&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="350" y="80" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-4" value="&lt;b&gt;数据库初始化&lt;/b&gt;&lt;span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;打开指定数据库表，获取总数据数目&lt;br&gt;计算出总页数并显示&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="617" y="80" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-5" value="&lt;b&gt;获取数据函数&lt;/b&gt;&lt;span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;获取指定范围数据，每获取一行调用查询回调函数。&lt;br&gt;在新刷新的页面数据条数少于上次刷新的数据条数时，需要将上次多刷新的置为空&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="880" y="80" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-6" value="&lt;b&gt;查询回调函数&lt;/b&gt;&lt;span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;获取到的开关量值替换为对应文本&lt;br&gt;时间戳转为时间形式&lt;br&gt;数据从第一行开始添加到历史记录表中显示&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1380" y="80" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-7" value="创建父容器，后续组件均创建在该容器中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="240" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-8" value="创建退出按钮，点击时关闭查询页面以及历史记录页面&lt;br&gt;创建数据库显示表，设置列名" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="410" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-10" value="创建翻页按钮，点击更新当前所在页数&lt;br&gt;根据当前所在页数计算出偏移数据量，获取数据函数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="570" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-11" value="创建页数显示标签&lt;br&gt;当前页数/总页数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="720" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-12" value="创建查询起止日期文本框&lt;br&gt;添加到组中以方便日历回调判断哪个文本框唤出的日历&lt;br&gt;点击时lv_layer_sys添加点击标志&lt;br&gt;lv_layer_sys层添加日历事件回调&lt;br&gt;清除日历组件隐藏标志" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="880" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-13" value="&lt;b&gt;日历事件回调&lt;/b&gt;&lt;br&gt;点击日历之外的地方会隐藏日历并初始化lv_layer_sys层&lt;br&gt;点击日历的值会将对应的值显示在当前获得焦点的文本框中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="880" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-14" value="创建日历，父对象为lv_layer_sys" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1040" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-15" value="创建查询按钮，&lt;br&gt;点击将查询起止文本框中的时间转为时间戳比较&lt;br&gt;查询起始时间晚于查询截止时间，弹出错误框&lt;br&gt;否则调用起止时间查询函数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1210" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-16" value="&lt;b&gt;起止时间查询函数&lt;/b&gt;&lt;br&gt;在lv_layer_sys层创建查询结果表及退出按钮，&lt;br&gt;点击退出按钮时删除表及按钮&lt;br&gt;sqlite根据时间戳条件查询结果数据，每行调用条件查询函数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1210" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZgB-sFh266Aaa95AsC0-17" value="&lt;b&gt;条件查询函数&lt;/b&gt;&lt;br&gt;获取到的开关量值替换为对应文本&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;时间戳转为时间形式&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;数据从第一行开始添加到查询结果表中显示" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1210" width="330" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
