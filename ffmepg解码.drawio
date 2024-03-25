@@ -1,9 +1,160 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T08:54:47.501Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" version="24.0.5" etag="pOzixY4k-geLPlTqUgpd" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T09:16:12.380Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="ZojH5n0gDjxoIctSCiCI" version="24.0.5" type="github">
   <diagram name="第 1 页" id="2gCqcER_l-XJ9aPpSIou">
-    <mxGraphModel>
+    <mxGraphModel dx="2593" dy="1380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-1" target="ZM3BXHYj-S5DXSt79jhW-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-1" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="50" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-2" target="ZM3BXHYj-S5DXSt79jhW-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-2" value="avformat_network_init();&lt;div&gt;初始化网络流格式,使用网络流时必须先执行&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="170" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-3" target="ZM3BXHYj-S5DXSt79jhW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-3" value="&lt;div&gt;avformat_open_input(&amp;amp;avFormatContext, my_rtsp_url, NULL, &amp;amp;options);&lt;br&gt;&lt;/div&gt;&lt;div&gt;打开指定媒体文件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="400" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-4" target="ZM3BXHYj-S5DXSt79jhW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-4" value="&lt;div&gt;av_dict_set(&amp;amp;options, &quot;rtsp_transport&quot;, &quot;tcp&quot;, 0);&lt;br&gt;&lt;/div&gt;&lt;div&gt;设置相关参数&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="290" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-5" target="ZM3BXHYj-S5DXSt79jhW-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-5" value="avformat_find_stream_info(avFormatContext, NULL);&lt;br&gt;&lt;div&gt;获取流信息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="520" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-6" target="ZM3BXHYj-S5DXSt79jhW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-6" value="av_find_best_stream(avFormatContext, AVMEDIA_TYPE_VIDEO, -1, -1, &amp;amp;videoDecoder, 0);&lt;br&gt;&lt;div&gt;探寻文件中是否存储视频流,获取相关解码器&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="640" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-7" target="ZM3BXHYj-S5DXSt79jhW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-7" value="&lt;div&gt;videoDecoderCtx = avFormatContext-&amp;gt;streams[videoStreamIndex]-&amp;gt;codec;&lt;br&gt;&lt;/div&gt;&lt;div&gt;获取指定解码器上下文&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="760" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-8" target="ZM3BXHYj-S5DXSt79jhW-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-8" value="&lt;div&gt;avcodec_open2(videoDecoderCtx, videoDecoder, NULL);&lt;br&gt;&lt;/div&gt;&lt;div&gt;打开视频解码器&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="890" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-9" target="ZM3BXHYj-S5DXSt79jhW-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-9" value="&lt;div&gt;&lt;div&gt;avPacket = av_packet_alloc();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; avFrameRGB = av_frame_alloc();&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;buffer = (uint8_t *)av_malloc(byte * sizeof(uint8_t));&lt;/div&gt;&lt;/div&gt;&lt;div&gt;预分配好内存&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1010" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-10" target="ZM3BXHYj-S5DXSt79jhW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-10" value="&lt;div&gt;&lt;div&gt;av_image_fill_arrays();&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;开辟缓存存储一帧数据，用于存储图像格式转换之后的图像数据&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1150" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-11" target="ZM3BXHYj-S5DXSt79jhW-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-11" value="&lt;div&gt;&lt;div&gt;swsContext = sws_getContext();&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;图像转换&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1280" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-12" target="ZM3BXHYj-S5DXSt79jhW-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-30" value="读到数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZM3BXHYj-S5DXSt79jhW-29">
+          <mxGeometry x="-0.0857" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1200" y="1660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-44" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZM3BXHYj-S5DXSt79jhW-43">
+          <mxGeometry x="-0.3623" y="4" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-12" value="&amp;nbsp;av_read_frame(avFormatContext, avPacket);&lt;div&gt;获取一帧数据&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="1680" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-13" target="ZM3BXHYj-S5DXSt79jhW-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-13" value="&lt;div&gt;&lt;div&gt;frameFinish = avcodec_send_packet(videoDecoderCtx, avPacket);&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;frameFinish = avcodec_receive_frame(videoDecoderCtx, avFrameYUV);&lt;br&gt;&lt;/div&gt;&lt;div&gt;帧数据解码&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1950" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-14" target="ZM3BXHYj-S5DXSt79jhW-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-14" value="&lt;div&gt;&lt;div&gt;sws_scale(swsContext);&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;将数据转成一张图片(yuv-&amp;gt;rgb)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="2080" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="2340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-15" value="&lt;div&gt;&lt;div&gt;av_usleep(ptsTime - nowTime);&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;延时(不然文件会立即全部播放完)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="2220" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-16" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;av_packet_unref(avPacket);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; av_freep(avPacket);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;释放帧数据&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="2370" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-17" target="ZM3BXHYj-S5DXSt79jhW-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-17" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;ffmpeg_deinit&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;释放ffmpeg相关资源&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="2570" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-38" target="ZM3BXHYj-S5DXSt79jhW-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-41" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZM3BXHYj-S5DXSt79jhW-40">
+          <mxGeometry x="0.2208" y="-4" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZM3BXHYj-S5DXSt79jhW-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="2569.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-46" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZM3BXHYj-S5DXSt79jhW-45">
+          <mxGeometry x="-0.8453" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-38" value="while(1)&lt;div&gt;循环解码流程&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="705" y="1410" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-42" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1370" y="1650" as="sourcePoint" />
+            <mxPoint x="820" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZM3BXHYj-S5DXSt79jhW-47" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="2720" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
