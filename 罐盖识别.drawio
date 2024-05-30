@@ -1,9 +1,50 @@
-<mxfile host="app.diagrams.net" modified="2024-05-30T06:18:23.912Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" version="24.4.4" etag="NeSO6URRBMCAnpkySrlv" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-30T08:58:52.160Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="SecH0Fo_Iw5949IpbFPY" version="24.4.4" type="github">
   <diagram name="第 1 页" id="lw8zTPzRRaqtHzJ8E-AT">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2DVxxk4gbQFyOOUrnvX-1" target="d2DVxxk4gbQFyOOUrnvX-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-1" value="send_flag = 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2DVxxk4gbQFyOOUrnvX-2" target="d2DVxxk4gbQFyOOUrnvX-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-2" value="点击开始罐盖识别&lt;div&gt;infernce_flag = 1&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2DVxxk4gbQFyOOUrnvX-4" target="d2DVxxk4gbQFyOOUrnvX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-4" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;rtsp解码线程&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;发送解码图片信号&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="498" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2DVxxk4gbQFyOOUrnvX-6" target="d2DVxxk4gbQFyOOUrnvX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-6" value="sned_flag = 0" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="638" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2DVxxk4gbQFyOOUrnvX-8" target="d2DVxxk4gbQFyOOUrnvX-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-8" value="推理&lt;div&gt;分析结果，返回结果&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="778" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2DVxxk4gbQFyOOUrnvX-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1048" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-10" value="获取结果分析" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="918" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2DVxxk4gbQFyOOUrnvX-14" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
